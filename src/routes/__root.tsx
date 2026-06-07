@@ -77,19 +77,39 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      {
+        title: "Barbearia Cadmo's | Barbearia Premium em Guarapari - ES",
+      },
+      {
+        name: "description",
+        content:
+          "Barbearia premium em Guarapari - ES. Cortes modernos, barba impecável e a 1ª barbearia por assinatura da cidade. Agende pelo WhatsApp.",
+      },
+      { name: "author", content: "Barbearia Cadmo's" },
+      {
+        name: "keywords",
+        content:
+          "barbearia Guarapari, barbearia São Gabriel Guarapari, corte masculino Guarapari, barbearia premium Guarapari, barbearia por assinatura Guarapari",
+      },
+      { property: "og:title", content: "Barbearia Cadmo's | Barbearia Premium em Guarapari" },
+      {
+        property: "og:description",
+        content:
+          "A experiência premium que transforma seu visual. 4,9★ no Google, 3 unidades em Guarapari.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap",
       },
     ],
   }),

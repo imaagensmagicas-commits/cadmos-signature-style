@@ -1,6 +1,6 @@
 import { Reveal } from "./Reveal";
 import { motion } from "motion/react";
-import { Instagram } from "lucide-react";
+import { InstagramIcon } from "./icons";
 import { INSTAGRAM_URL } from "@/lib/site";
 import fade from "@/assets/gallery-fade.jpg";
 import beard from "@/assets/gallery-beard.jpg";
@@ -52,7 +52,7 @@ export function Gallery() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary transition-colors hover:text-gold"
           >
-            <Instagram className="size-5" /> Veja mais em @barbeariacadmos
+            <InstagramIcon className="size-5" /> Veja mais em @barbeariacadmos
           </a>
         </Reveal>
       </div>
